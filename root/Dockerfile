@@ -1,5 +1,6 @@
 FROM node:latest
 WORKDIR /app
-RUN npx create-react-app .
+COPY . .
+COPY package*.json .
 CMD ["npm", "run", "start","--host"]
 

@@ -3,10 +3,10 @@ services:
   react-app:
     container_name: germaniii-website
     build:
-      context: .
+      context: ./root
       dockerfile: Dockerfile
     ports:
       - 8000:3000
     volumes:
-      - .:/app
+      - ./root:/app
       - /app/node_modules
