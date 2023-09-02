@@ -1,6 +1,7 @@
-FROM node:latest
+FROM node:lts
 WORKDIR /app
 COPY . .
 COPY package*.json .
-CMD ["npm", "run", "start","--host"]
+RUN npm run build
+CMD ["npm", "run", "start"]
 

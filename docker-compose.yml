@@ -1,7 +1,7 @@
 version: "3.2"
 services:
   react-app:
-    container_name: germaniii-website
+    container_name: germaniii.com
     build:
       context: ./root
       dockerfile: Dockerfile
@@ -9,4 +9,5 @@ services:
       - 8000:3000
     volumes:
       - ./root:/app
+      - /app/.next
       - /app/node_modules
