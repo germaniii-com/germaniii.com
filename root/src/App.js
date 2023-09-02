@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          Hello, this website is still under development. Please check back later. 
+        Hello, this website is still under development. Please check back later.
       </header>
     </div>
   );
