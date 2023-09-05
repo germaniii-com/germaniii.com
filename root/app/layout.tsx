@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import NavigationBar from "./_components/NavigationBar";
+import Footer from "./_components/Footer";
 
 const roboto = Roboto({
   subsets: ["cyrillic"],
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={roboto.className}>
         <NavigationBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
