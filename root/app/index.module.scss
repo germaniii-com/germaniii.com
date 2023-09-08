@@ -1,0 +1,11 @@
+$primaryColor: #363636;
+$primaryColor_onHover: #858585;
+$primaryColor_onActive: #ffffff;
+$backgroundColor: #ffffff;
+$accentColor: #0878e7;
+
+.base {
+  background-color: $backgroundColor;
+  display: flex;
+  flex-direction: column;
+}

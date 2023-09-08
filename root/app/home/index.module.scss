@@ -1,0 +1,15 @@
+@import "@/index.module.scss";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $backgroundColor;
+  height: 100%;
+  overflow: auto;
+  h1 {
+    color: $primaryColor;
+    font-size: medium;
+  }
+}

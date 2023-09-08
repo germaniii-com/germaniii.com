@@ -1,0 +1,61 @@
+@import "@/index.module.scss";
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: $backgroundColor;
+  color: $primaryColor;
+  font-weight: 500;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  & > .logo {
+    display: flexbox;
+    align-self: center;
+    margin-left: 1em;
+    span {
+      font-weight: 900;
+      font-size: larger;
+      text-align: center;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1em;
+    li {
+      text-align: center;
+      font-size: medium;
+      a {
+        text-decoration: none;
+        padding: 0.7em;
+        border-radius: 5%;
+        &:hover {
+          color: $primaryColor_onHover;
+        }
+        &:active {
+          color: $primaryColor_onActive;
+        }
+      }
+    }
+  }
+
+  & span {
+    display: flexbox;
+    align-self: center;
+    margin-right: 1em;
+    font-size: x-small;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
