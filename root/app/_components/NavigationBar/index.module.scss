@@ -1,0 +1,60 @@
+@import "@/index.module.scss";
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: $backgroundColor;
+  color: $primaryColor;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 1em;
+    li {
+      text-align: center;
+      a {
+        text-decoration: none;
+        padding: 0.7em;
+        border-radius: 5%;
+        &:hover {
+          color: $primaryColor_onHover;
+        }
+        &:active {
+          background-color: $primaryColor;
+          color: $primaryColor_onActive;
+        }
+        &.selected {
+          background-color: $primaryColor;
+          color: $primaryColor_onActive;
+        }
+      }
+    }
+  }
+
+  & .external {
+    flex-grow: 1;
+    text-align: right;
+    padding: 1em;
+    margin: 0 1em 0 0;
+    align-content: center;
+    span {
+      padding: 0.7em;
+      border-radius: 5%;
+      &:hover {
+        color: $primaryColor_onHover;
+      }
+      &:active {
+        background-color: $primaryColor;
+        color: $primaryColor_onActive;
+      }
+    }
+  }
+}
