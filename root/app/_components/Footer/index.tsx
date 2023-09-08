@@ -18,29 +18,61 @@ const Footer = () => {
                         sm:ml-5"
       >
         <li>
-          <a href="https://blog.germaniii.com">Blog</a>
+          <a
+            href="https://blog.germaniii.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Blog
+          </a>
         </li>
         <li>
-          <a href="mailto:germaniiifelisarta@gmail.com">G-mail</a>
+          <a
+            href="mailto:germaniiifelisarta@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            G-mail
+          </a>
         </li>
         <li>
-          <a href="https://github.com/germaniii">Github</a>
+          <a
+            href="https://github.com/germaniii"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
         </li>
         <li>
-          <a href="https://instagram.com/germaniiifelisarta">Instagram</a>
+          <a
+            href="https://instagram.com/germaniiifelisarta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/german-iii-felisarta-648b9420b">
+          <a
+            href="https://www.linkedin.com/in/german-iii-felisarta-648b9420b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </a>
         </li>
         <li>
-          <a href="https://www.youtube.com/channel/UCLdx8-LN-JAnrExazmhjmDA">
+          <a
+            href="https://www.youtube.com/channel/UCLdx8-LN-JAnrExazmhjmDA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Youtube
           </a>
         </li>
       </ul>
-      <span className="block text-xs text-gray-500 text-baseline dark:text-gray-400">
+      <span>
         © 2023 <a href="/home">German III Felisarta</a>. All Rights Reserved.
       </span>
     </div>
