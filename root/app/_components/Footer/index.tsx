@@ -18,7 +18,7 @@ const Footer = () => {
               className="h-8 mr-3"
               alt="Flowbite Logo"
             /> */}
-        <span>German III</span>
+        <span>German III Felisarta</span>
       </Link>
       <ul
         className="flex flex-wrap items-center mb-6 \

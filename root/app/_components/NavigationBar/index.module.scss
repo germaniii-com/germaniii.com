@@ -7,9 +7,9 @@
   background-color: $backgroundColor;
   color: $primaryColor;
   font-weight: 500;
-  position: sticky;
   top: 0;
   width: 100%;
+  margin-top: 1em;
   ul {
     display: flex;
     flex-direction: row;
@@ -20,6 +20,7 @@
     padding: 1em;
     li {
       text-align: center;
+      margin-right: 1em;
       a {
         text-decoration: none;
         padding: 0.7em;
