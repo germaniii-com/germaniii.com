@@ -7,7 +7,7 @@
   background-color: $backgroundColor;
   color: $primaryColor;
   font-weight: 500;
-  position: fixed;
+  margin-bottom: .5em;
   bottom: 0;
   width: 100%;
 
@@ -16,16 +16,16 @@
     align-self: center;
     margin-left: 1em;
     span {
-      font-weight: 900;
-      font-size: larger;
+      font-weight: bolder;
+      font-size: small;
       text-align: center;
     }
   }
 
   ul {
-    display: flex;
-    flex-direction: row;
     flex-grow: 3;
+    display: grid;
+    grid-auto-flow: column;
     align-items: center;
     justify-content: center;
     list-style-type: none;
@@ -37,11 +37,24 @@
         text-decoration: none;
         padding: 0.7em;
         border-radius: 5%;
-        &:hover {
-          color: $primaryColor_onHover;
-        }
         &:active {
           color: $primaryColor_onActive;
+        }
+
+        svg {
+          display: inline; /* or block, or any other appropriate value */
+        }
+        span {
+          display: none;
+        }
+
+        /* CSS: Show the SVG and span on hover of the parent */
+        &:hover svg {
+          display: none;
+        }
+        &:hover span {
+          font-size: small;
+          display: inline; /* or block, or any other appropriate value */
         }
       }
     }

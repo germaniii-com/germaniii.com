@@ -1,5 +1,13 @@
 import Link from "next/link";
 import styles from "./index.module.scss";
+import {
+  BiDetail,
+  BiLogoGmail,
+  BiLogoGithub,
+  BiLogoInstagram,
+  BiLogoLinkedin,
+  BiLogoYoutube,
+} from "react-icons/bi";
 
 const Footer = () => {
   return (
@@ -10,7 +18,7 @@ const Footer = () => {
               className="h-8 mr-3"
               alt="Flowbite Logo"
             /> */}
-        <span>German III</span>
+        <span>German III Felisarta</span>
       </Link>
       <ul
         className="flex flex-wrap items-center mb-6 \
@@ -23,7 +31,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Blog
+            <BiDetail />
+            <span>Blog</span>
           </a>
         </li>
         <li>
@@ -32,7 +41,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            G-mail
+            <BiLogoGmail />
+            <span>Gmail</span>
           </a>
         </li>
         <li>
@@ -41,7 +51,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Github
+            <BiLogoGithub />
+            <span>Github</span>
           </a>
         </li>
         <li>
@@ -50,7 +61,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Instagram
+            <BiLogoInstagram />
+            <span>Instagram</span>
           </a>
         </li>
         <li>
@@ -59,7 +71,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            <BiLogoLinkedin />
+            <span>LinkedIn</span>
           </a>
         </li>
         <li>
@@ -68,7 +81,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Youtube
+            <BiLogoYoutube />
+            <span>Youtube</span>
           </a>
         </li>
       </ul>
