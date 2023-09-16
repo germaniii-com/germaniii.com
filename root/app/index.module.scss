@@ -6,6 +6,8 @@ $accentColor: #0878e7;
 
 .base {
   background-color: $backgroundColor;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 1em;
+  overflow: hidden;
 }
