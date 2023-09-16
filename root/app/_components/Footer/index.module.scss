@@ -1,15 +1,16 @@
 @import "../../index.module.scss";
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  bottom: 0;
+
   background-color: $backgroundColor;
   color: $primaryColor;
   font-weight: 500;
-  margin-bottom: .5em;
-  bottom: 0;
-  width: 100%;
+
+  display: flex;
+  flex-direction: row;
 
   & > .logo {
     display: flexbox;
