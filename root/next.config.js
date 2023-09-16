@@ -9,14 +9,6 @@ const nextConfig = {
       },
     ];
   },
-  async rewrites() {
-    return [
-      {
-        source: "/",
-        destination: "/home",
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;
