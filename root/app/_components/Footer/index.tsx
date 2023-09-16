@@ -87,7 +87,7 @@ const Footer = () => {
         </li>
       </ul>
       <span>
-        © 2023 <a href="/home">German III Felisarta</a>. All Rights Reserved.
+        © <a href="/home">German III Felisarta</a>. All Rights Reserved.
       </span>
     </div>
   );

@@ -20,6 +20,10 @@
     justify-content: flex-start;
     list-style-type: none;
     padding: 1em;
+    user-select: none; // chrome and Opera
+    -moz-user-select: none; // Firefox
+    -webkit-text-select: none; // IOS Safari
+    -webkit-user-select: none; // Safari
     li {
       text-align: center;
       margin-right: 1em;
@@ -48,6 +52,10 @@
     padding: 1em;
     margin: 0 1em 0 0;
     align-content: center;
+    user-select: none; // chrome and Opera
+    -moz-user-select: none; // Firefox
+    -webkit-text-select: none; // IOS Safari
+    -webkit-user-select: none; // Safari
     span {
       padding: 0.7em;
       border-radius: 5%;
