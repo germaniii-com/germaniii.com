@@ -1,0 +1,35 @@
+.aboutMeWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.imageWrapper {
+  width: fit-content;
+  height: fit-content;
+  aspect-ratio: 1;
+  img {
+  }
+}
+
+.textWrapper {
+  padding-top: 6em;
+  color: #363636;
+
+  h1 {
+    font-size: xx-large;
+    font-weight: 400;
+    b {
+      font-weight: 600;
+      color: linear-gradient(#363636, #0878e7);
+    }
+  }
+
+  h2 {
+    font-size: large;
+    font-weight: 300;
+  }
+  p {
+    font-size: medium;
+    font-weight: 300;
+  }
+}
