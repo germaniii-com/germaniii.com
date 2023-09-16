@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./index.module.scss";
+import { BiSun } from "react-icons/bi";
 
 const navigationButtons: string[] = ["Home", "Projects"];
 
@@ -18,6 +19,7 @@ const NavigationBar = () => {
         })}
       </ul>
       <div className={styles.external}>
+        <BiSun />
         <span>Blog</span>
       </div>
     </div>

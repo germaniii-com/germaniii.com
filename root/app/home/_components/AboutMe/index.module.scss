@@ -1,0 +1,56 @@
+.aboutMeWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+  img {
+    aspect-ratio: 1;
+    width: (100vw / 3);
+    height: (100vw / 3);
+  }
+}
+
+.textWrapper {
+  color: #363636;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  span {
+    font-size: xx-large;
+    font-weight: 100;
+    &.spanBig {
+      font-weight: 900;
+      font-size: xx-large;
+    }
+  }
+
+  h2 {
+    font-size: large;
+    font-weight: 300;
+  }
+  p {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em;
+    background-color: #bffdfd;
+    border-radius: 0.5em;
+
+    font-size: small;
+    font-weight: 300;
+  }
+}
