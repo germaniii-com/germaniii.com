@@ -12,6 +12,11 @@
   display: flex;
   flex-direction: row;
 
+  user-select: none; // chrome and Opera
+  -moz-user-select: none; // Firefox
+  -webkit-text-select: none; // IOS Safari
+  -webkit-user-select: none; // Safari
+
   ul {
     display: flex;
     flex-direction: row;
@@ -19,11 +24,6 @@
     align-items: center;
     justify-content: flex-start;
     list-style-type: none;
-    padding: 1em;
-    user-select: none; // chrome and Opera
-    -moz-user-select: none; // Firefox
-    -webkit-text-select: none; // IOS Safari
-    -webkit-user-select: none; // Safari
     li {
       text-align: center;
       margin-right: 1em;
@@ -48,14 +48,25 @@
 
   & .external {
     flex-grow: 1;
-    text-align: right;
-    padding: 1em;
-    margin: 0 1em 0 0;
-    align-content: center;
-    user-select: none; // chrome and Opera
-    -moz-user-select: none; // Firefox
-    -webkit-text-select: none; // IOS Safari
-    -webkit-user-select: none; // Safari
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    svg {
+      &:hover {
+        color: $primaryColor_onHover;
+      }
+      &:active {
+        background-color: $primaryColor;
+        color: $primaryColor_onActive;
+      }
+      &.selected {
+        background-color: $primaryColor;
+        color: $primaryColor_onActive;
+      }
+      margin: 0 1em;
+    }
     span {
       padding: 0.7em;
       border-radius: 5%;
