@@ -1,26 +1,41 @@
 .aboutMeWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
 }
 
 .imageWrapper {
-  width: fit-content;
-  height: fit-content;
-  aspect-ratio: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
   img {
+    aspect-ratio: 1;
+    width: (100vw / 3);
+    height: (100vw / 3);
   }
 }
 
 .textWrapper {
-  padding-top: 6em;
   color: #363636;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  h1 {
+  span {
     font-size: xx-large;
-    font-weight: 400;
-    b {
-      font-weight: 600;
-      color: linear-gradient(#363636, #0878e7);
+    font-weight: 100;
+    &.spanBig {
+      font-weight: 900;
+      font-size: xx-large;
     }
   }
 
@@ -29,7 +44,13 @@
     font-weight: 300;
   }
   p {
-    font-size: medium;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em;
+    background-color: #bffdfd;
+    border-radius: 0.5em;
+
+    font-size: small;
     font-weight: 300;
   }
 }

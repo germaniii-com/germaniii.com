@@ -13,9 +13,9 @@ const AboutMe = () => (
     </div>
     <div className={styles.textWrapper}>
       <h2>Hi,</h2>
-      <h1>
-        I&apos;m <b>German III</b>
-      </h1>
+      <span>
+        I&apos;m <span className={styles.spanBig}>German III</span>
+      </span>
       <p>
         Bachelor of Science in Computer Engineering
         <br />
