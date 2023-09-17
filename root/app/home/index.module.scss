@@ -1,8 +1,8 @@
 @import "../index.module.scss";
 
 .main {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
   background-color: $backgroundColor;
