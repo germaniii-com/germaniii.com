@@ -1,11 +1,20 @@
 .aboutMeWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1em;
   height: 100%;
   width: 100%;
+
+  display: grid;
+  column-gap: 1em;
+  grid-template-rows: auto 1fr;
   align-items: center;
   justify-items: center;
+
+  // For Desktop
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    align-items: center;
+    justify-items: center;
+  }
 }
 
 .imageWrapper {
@@ -13,12 +22,25 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
 
   img {
     aspect-ratio: 1;
-    width: (100vw / 3);
-    height: (100vw / 3);
+    min-width: 200px;
+    min-height: 200px;
+    width: (100vw / 2);
+    height: (100vw / 2);
+  }
+
+  // For Desktop
+  @media only screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: right;
+    img {
+      aspect-ratio: 1;
+      width: (100vw / 3);
+      height: (100vw / 3);
+    }
   }
 }
 
@@ -29,28 +51,62 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  line-height: 1em;
+  margin-top: 1em;
 
   span {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 100;
     &.spanBig {
       font-weight: 900;
-      font-size: xx-large;
+      font-size: x-large;
     }
   }
 
   h2 {
-    font-size: large;
+    font-size: medium;
     font-weight: 300;
   }
-  p {
-    width: fit-content;
-    height: fit-content;
-    padding: 0.5em;
-    background-color: #bffdfd;
-    border-radius: 0.5em;
 
-    font-size: small;
-    font-weight: 300;
+  & .pWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    p {
+      width: fit-content;
+      height: fit-content;
+      padding: 0.5em;
+      background-color: #bffdfd;
+      border-radius: 0.5em;
+      font-size: small;
+      font-weight: 300;
+    }
+  }
+
+  // For Desktop
+  @media only screen and (min-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    line-height: normal;
+    margin-top: 0;
+    & .pWrapper {
+      width: 100%;
+      display: flex;
+      justify-content: left;
+      margin-top: 0;
+      p {
+        width: fit-content;
+        height: fit-content;
+        padding: 0.5em;
+        background-color: #bffdfd;
+        border-radius: 0.5em;
+
+        font-size: small;
+        font-weight: 300;
+      }
+    }
   }
 }
