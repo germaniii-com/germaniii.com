@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   background-color: $backgroundColor;
-  height: 100%;
+  height: fit-content;
   margin: 1em;
+  gap: 1em;
 }

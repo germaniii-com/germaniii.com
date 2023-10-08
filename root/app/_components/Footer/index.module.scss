@@ -9,12 +9,13 @@
   color: $primaryColor;
   font-weight: 500;
 
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
 
   & > .logo {
     display: flexbox;
     align-self: center;
+    text-align: left;
     margin-left: 1em;
     span {
       font-weight: bolder;
@@ -48,22 +49,24 @@
         span {
           display: none;
         }
-
-        /* CSS: Show the SVG and span on hover of the parent */
-        &:hover svg {
-          display: none;
-        }
-        &:hover span {
-          font-size: small;
-          display: inline; /* or block, or any other appropriate value */
+        // For Desktop
+        @media only screen and (min-width: 768px) {
+          /* CSS: Show the SVG and span on hover of the parent */
+          &:hover svg {
+            display: none;
+          }
+          &:hover span {
+            font-size: small;
+            display: inline; /* or block, or any other appropriate value */
+          }
         }
       }
     }
   }
 
   & span {
-    display: flexbox;
     align-self: center;
+    text-align: right;
     margin-right: 1em;
     font-size: x-small;
     a {
