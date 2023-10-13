@@ -1,3 +1,4 @@
+import ContactMeButton from "../ContactMeButton";
 import styles from "./index.module.scss";
 import Image from "next/image";
 
@@ -23,6 +24,8 @@ const AboutMe = () => (
           Software Engineer
           <br />
           Technology Enthusiast
+          <br />
+          <ContactMeButton />
         </p>
       </div>
     </div>
