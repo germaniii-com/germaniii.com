@@ -1,4 +1,4 @@
-import ContactMeButton from "../ContactMeButton";
+import ContactMeButton from "./_components/ContactMeButton";
 import styles from "./index.module.scss";
 import Image from "next/image";
 
