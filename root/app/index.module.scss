@@ -14,7 +14,7 @@ $accentColor: #0878e7;
   background-color: $backgroundColor;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  margin: 1em;
+  padding: 1em;
   overflow: hidden;
   height: fit-content;
 }
