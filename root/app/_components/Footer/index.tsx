@@ -87,7 +87,8 @@ const Footer = () => {
         </li>
       </ul>
       <span>
-        © <a href="/home">German III Felisarta</a>. All Rights Reserved.
+        © <a href="/home">German III</a>
+        <div className={styles.allRights}> Felisarta. All Rights Reserved.</div>
       </span>
     </div>
   );
