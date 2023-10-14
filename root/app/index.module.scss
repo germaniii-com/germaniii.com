@@ -14,9 +14,10 @@ $accentColor: #0878e7;
   background-color: $backgroundColor;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  padding: 1em;
-  overflow: hidden;
-  height: fit-content;
+  padding: 0.5em;
+  overflow-x: hidden;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .emptyBody {
