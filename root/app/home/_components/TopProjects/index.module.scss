@@ -15,6 +15,8 @@
     column-gap: 0;
 
     @media only screen and (min-width: 768px) {
+      max-width: 85%;
+      justify-self: center;
       row-gap: 1em;
       grid-template-columns: 1fr;
     }
