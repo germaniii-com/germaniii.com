@@ -1,4 +1,5 @@
 import AboutMe from "./_components/AboutMe";
+import Skills from "./_components/Skills";
 import TopProjects from "./_components/TopProjects";
 import styles from "./index.module.scss";
 
@@ -7,9 +8,8 @@ const Home = () => {
     <main className={styles.main}>
       <AboutMe />
       <TopProjects />
-      <h1>
-        Hello, this website is still in development. Please check back later.
-      </h1>
+      <Skills />
+      <h1>Hello, this website is still in development.</h1>
     </main>
   );
 };
