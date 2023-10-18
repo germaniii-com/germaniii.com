@@ -25,6 +25,7 @@ import {
   SiLaravel,
   SiRedis,
   SiSqlite,
+  SiFigma,
 } from "react-icons/si";
 import SectionHeader from "../SectionHeader";
 
@@ -54,6 +55,7 @@ const Skills = () => {
         <SiLinux />
         <SiArduino />
         <SiGnubash />
+        <SiFigma />
       </div>
     </div>
   );
