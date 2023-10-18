@@ -23,6 +23,8 @@ import {
   SiArduino,
   SiGnubash,
   SiLaravel,
+  SiRedis,
+  SiSqlite,
 } from "react-icons/si";
 import SectionHeader from "../SectionHeader";
 
@@ -44,9 +46,11 @@ const Skills = () => {
         <BiLogoRedux />
         <BiLogoSpringBoot />
         <SiLaravel />
+        <SiMysql />
+        <SiRedis />
+        <SiSqlite />
         <BiLogoGit />
         <BiLogoDocker />
-        <SiMysql />
         <SiLinux />
         <SiArduino />
         <SiGnubash />
