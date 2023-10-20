@@ -1,0 +1,51 @@
+@import "../../../../../index.module.scss";
+
+.experienceBoxWrapper {
+  display: block;
+  background: $experienceBoxBackgroundColor;
+  padding: 1em;
+  border-radius: 1em;
+  align-content: center;
+  justify-content: center;
+
+  & .textWrapper {
+    display: grid;
+    column-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+
+    span {
+      color: $primaryColor;
+      justify-self: end;
+      align-self: center;
+      height: fit-content;
+    }
+
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      color: black;
+      max-width: 75%;
+
+      li {
+        height: fit-content;
+      }
+
+      li:nth-child(1) {
+        color: blue;
+        font-weight: bold;
+      }
+
+      li:nth-child(2) {
+        font-size: 1em;
+        font-weight: normal;
+      }
+
+      li:nth-child(3) {
+        margin-top: 0.5em;
+        font-size: 1em;
+        font-weight: normal;
+      }
+    }
+  }
+}
