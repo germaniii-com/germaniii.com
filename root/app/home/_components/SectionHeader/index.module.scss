@@ -6,13 +6,13 @@
   text-align: center;
 
   h1 {
-    font-weight: 900;
+    font-weight: bold;
     color: $primaryColor;
   }
 
   h2 {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: normal;
     color: $primaryColor;
   }
 }
