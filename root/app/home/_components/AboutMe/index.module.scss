@@ -65,16 +65,16 @@
 
   span {
     font-size: x-large;
-    font-weight: 100;
+    font-weight: normal;
     &.spanBig {
-      font-weight: 900;
+      font-weight: bold;
       font-size: x-large;
     }
   }
 
   h2 {
     font-size: medium;
-    font-weight: 300;
+    font-weight: normal;
   }
 
   & .pWrapper {
@@ -89,7 +89,7 @@
       background-color: #bffdfd;
       border-radius: 0.5em;
       font-size: small;
-      font-weight: 300;
+      font-weight: normal;
     }
   }
 
@@ -113,7 +113,7 @@
         border-radius: 0.5em;
 
         font-size: small;
-        font-weight: 300;
+        font-weight: normal;
       }
     }
   }

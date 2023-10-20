@@ -7,7 +7,7 @@
 
   background-color: $backgroundColor;
   color: $primaryColor;
-  font-weight: 500;
+  font-weight: normal;
 
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -18,7 +18,7 @@
     text-align: left;
     margin-left: 1em;
     span {
-      font-weight: bolder;
+      font-weight: bold;
       font-size: small;
       text-align: center;
     }
