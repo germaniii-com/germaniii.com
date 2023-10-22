@@ -28,8 +28,15 @@ $transition-duration: 0.5s;
       padding: 0.5em;
       cursor: pointer;
       transition: background-color $transition-duration;
+      display: grid;
+      grid-template-columns: 1fr auto;
+
+      span {
+        font-size: small;
+      }
 
       & svg {
+        align-self: center;
         transition: transform $transition-duration;
         transform: rotate(180deg);
       }

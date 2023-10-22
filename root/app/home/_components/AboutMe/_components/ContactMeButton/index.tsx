@@ -14,7 +14,8 @@ const ContactMeButton = () => {
   return (
     <div className={`${styles.iconButton}`}>
       <button>
-        Contact Me <MdOutlineKeyboardArrowRight />
+        <span>Contact me</span>
+        <MdOutlineKeyboardArrowRight />
       </button>
       <div className={styles.iconContainer}>
         <a

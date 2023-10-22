@@ -3,10 +3,16 @@
 .listStyle {
   text-align: center;
   margin-right: 1em;
-  a {
-    text-decoration: none;
+  cursor: pointer;
+
+  button {
+    border: none;
     padding: 0.7em;
     border-radius: 0.5em;
+    background: none;
+    color: inherit;
+    font-weight: normal;
+
     &:hover {
       color: $primaryColor_onHover;
     }

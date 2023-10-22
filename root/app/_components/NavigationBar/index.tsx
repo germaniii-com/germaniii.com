@@ -1,8 +1,8 @@
 import styles from "./index.module.scss";
-import { BiSun } from "react-icons/bi";
+import { BiDownload, BiSun } from "react-icons/bi";
 import NavButton from "./_components/NavButton";
 
-const navigationButtons: string[] = ["Home", "Projects", "Blog"];
+const navigationButtons: string[] = ["Home", "Projects", "Blog", "Resumé"];
 
 const NavigationBar = () => {
   return (
