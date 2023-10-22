@@ -22,26 +22,6 @@
     flex-direction: row;
     align-items: center;
     list-style-type: none;
-    li {
-      text-align: center;
-      margin-right: 1em;
-      a {
-        text-decoration: none;
-        padding: 0.7em;
-        border-radius: 5%;
-        &:hover {
-          color: $primaryColor_onHover;
-        }
-        &:active {
-          background-color: $primaryColor;
-          color: $primaryColor_onActive;
-        }
-        &.selected {
-          background-color: $primaryColor;
-          color: $primaryColor_onActive;
-        }
-      }
-    }
   }
 
   & .external {
