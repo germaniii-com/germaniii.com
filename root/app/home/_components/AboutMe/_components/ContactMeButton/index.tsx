@@ -1,21 +1,20 @@
 "use client";
 
-import { useState } from "react";
 import styles from "./index.module.scss";
 import {
-  BiArrowBack,
   BiLogoGmail,
   BiLogoGithub,
   BiLogoInstagram,
   BiLogoLinkedin,
   BiLogoYoutube,
 } from "react-icons/bi";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const ContactMeButton = () => {
   return (
     <div className={`${styles.iconButton}`}>
       <button>
-        Contact Me <BiArrowBack />
+        Contact Me <MdOutlineKeyboardArrowRight />
       </button>
       <div className={styles.iconContainer}>
         <a
