@@ -1,7 +1,7 @@
 import styles from "./index.module.scss";
 
 const Projects = () => {
-  return <main className={styles.main}></main>;
+  return <div className={styles.main}></div>;
 };
 
 export default Projects;
