@@ -35,16 +35,17 @@
       li:nth-child(1) {
         color: blue;
         font-weight: bold;
+        font-size: larger;
       }
 
       li:nth-child(2) {
-        font-size: 1em;
+        font-size: large;
         font-weight: normal;
       }
 
       li:nth-child(3) {
         margin-top: 0.5em;
-        font-size: 1em;
+        font-size: medium;
         font-weight: normal;
       }
     }
