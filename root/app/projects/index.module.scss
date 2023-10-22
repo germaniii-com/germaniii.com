@@ -1,0 +1,16 @@
+@import "../index.module.scss";
+
+.main {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  justify-content: center;
+  background-color: $backgroundColor;
+  height: fit-content;
+  margin: 1em;
+  gap: 5em;
+}
+
+.homeLayout {
+  height: 100%;
+}
