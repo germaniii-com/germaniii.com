@@ -1,3 +1,5 @@
+@import "../../../index.module.scss";
+
 .topProjectsWrapper {
   height: fit-content;
   width: 100%;
@@ -36,8 +38,32 @@
     .row:nth-child(2) {
       height: fit-content;
       @media only screen and (min-width: 768px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr auto;
         grid-column: 1 / span 2; // Some CSS magic to span row to 2 columns
+      }
+
+      a {
+        font-size: x-large;
+        font-weight: bold;
+        align-self: center;
+        justify-self: center;
+        color: $primaryColor;
+        display: grid;
+        grid-template-columns: 1fr auto;
+
+        p {
+          align-self: center;
+          justify-self: center;
+        }
+
+        svg {
+          color: $accentColor;
+          align-self: center;
+          justify-self: center;
+
+          width: 100px;
+          height: 100px;
+        }
       }
     }
   }

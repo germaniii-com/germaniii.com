@@ -1,7 +1,8 @@
+import { BiRightArrowAlt } from "react-icons/bi";
 import SectionHeader from "../SectionHeader";
 import ProjectCard from "./_components/ProjectCard";
 import styles from "./index.module.scss";
-import Image from "next/image";
+import Link from "next/link";
 
 const TopProjects = () => {
   return (
@@ -14,6 +15,10 @@ const TopProjects = () => {
         </div>
         <div className={styles.row}>
           <ProjectCard />
+          <Link href={"/projects"}>
+            <p>See More </p>
+            <BiRightArrowAlt />
+          </Link>
         </div>
       </div>
     </div>
