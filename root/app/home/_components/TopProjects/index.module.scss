@@ -64,6 +64,25 @@
 
           width: 100px;
           height: 100px;
+
+          @media only screen and (min-width: 768px) {
+            @keyframes moveArrow {
+              from {
+                transform: translateX(0);
+              }
+
+              to {
+                transform: translateX(1em);
+              }
+            }
+          }
+        }
+        /* Define the hover effect for the BiSolidWrench icon */
+        &:hover {
+          animation-duration: 0.5s;
+          animation-name: moveArrow;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
         }
       }
     }
