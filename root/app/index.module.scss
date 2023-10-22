@@ -17,7 +17,8 @@ $accentColor: #0878e7;
   grid-template-rows: auto 1fr auto;
   padding: 0.5em;
   overflow-x: hidden;
-  height: 100%;
+  min-height: 100vh;
+  height: fit-content;
   overflow-y: scroll;
 }
 
