@@ -10,7 +10,7 @@
   font-weight: normal;
 
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 1fr auto;
 
   user-select: none; // chrome and Opera
   -moz-user-select: none; // Firefox
@@ -21,40 +21,20 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     list-style-type: none;
-  }
+    padding: 1em;
 
-  & .external {
-    flex-grow: 1;
+    & .external {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: right;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
-    svg {
-      border-radius: 5px;
-      &:hover {
-        color: $primaryColor_onHover;
-      }
-      &:active {
-        background-color: $primaryColor;
-        color: $primaryColor_onActive;
-      }
-      &.selected {
-        background-color: $primaryColor;
-        color: $primaryColor_onActive;
-      }
-      margin: 0 1em;
-    }
-    span {
-      padding: 0.7em;
-      border-radius: 5%;
-      &:hover {
-        color: $primaryColor_onHover;
-      }
-      &:active {
-        background-color: $primaryColor;
-        color: $primaryColor_onActive;
+      svg {
+        &:hover {
+          color: $primaryColor_onHover;
+        }
       }
     }
   }
