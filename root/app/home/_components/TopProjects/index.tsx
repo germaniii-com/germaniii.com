@@ -16,7 +16,7 @@ const TopProjects = () => {
         <div className={styles.row}>
           <ProjectCard />
           <Link href={"/projects"} replace={true}>
-            <p>See More </p>
+            <p>See more projects </p>
             <BiRightArrowAlt />
           </Link>
         </div>
