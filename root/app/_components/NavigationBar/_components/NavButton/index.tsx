@@ -18,6 +18,7 @@ const NavButton = ({ label = "" }: NavButtonProps) => {
       <Link
         key={label}
         href={`/${label.toLowerCase()}`}
+        replace={true}
         className={selectedClass}
       >
         {label}
