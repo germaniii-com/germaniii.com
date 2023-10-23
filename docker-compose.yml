@@ -4,7 +4,7 @@ services:
     container_name: germaniii.com
     build:
       context: ./root
-      dockerfile: Dockerfile
+      dockerfile: ../Dockerfile
     ports:
       - 8000:3000
     volumes:
