@@ -1,3 +1,4 @@
+import React, { ReactNode } from "react";
 import { DIRECTION } from "../..";
 import styles from "./index.module.scss";
 import { BiSolidWrench } from "react-icons/bi";
@@ -7,6 +8,7 @@ interface ProjectCardProps {
   subTitle?: string;
   description?: string;
   direction?: DIRECTION;
+  image?: ReactNode;
 }
 
 const ProjectCard = ({
@@ -14,6 +16,7 @@ const ProjectCard = ({
   subTitle = "",
   description = "",
   direction = DIRECTION.FLOAT_LEFT,
+  image = <></>,
 }: ProjectCardProps) => {
   const projectCardStyle =
     direction == DIRECTION.FLOAT_LEFT
@@ -30,7 +33,7 @@ const ProjectCard = ({
           <span>{subTitle}</span>
         </span>
         <p>{description}</p>
-        <BiSolidWrench />
+        {image}
       </div>
     </button>
   );

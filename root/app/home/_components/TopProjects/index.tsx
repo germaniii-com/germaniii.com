@@ -21,12 +21,16 @@ const TopProjects = () => {
             subTitle="Beyond Automated Interaction"
             description="An Artificial Intelligence Assistant that can be accessed via the BAI web application."
             direction={DIRECTION.FLOAT_LEFT}
+            // eslint-disable-next-line @next/next/no-img-element
+            image={<img src={"/Project_EMA.png"} alt="" />}
           />
           <ProjectCard
             title="E.M.A."
             subTitle="Emergency Messaging Application"
             description="Thesis project that uses arduino modules in order to communicate between smartphones."
             direction={DIRECTION.FLOAT_RIGHT}
+            // eslint-disable-next-line @next/next/no-img-element
+            image={<img src={"/Project_EMA.png"} alt="" />}
           />
         </div>
         <div className={styles.row}>
@@ -35,6 +39,8 @@ const TopProjects = () => {
             subTitle="Connect, Hangout, Interact, Kommunicate, Always"
             description="A real-time messaging web application for communication."
             direction={DIRECTION.FLOAT_CENTER}
+            // eslint-disable-next-line @next/next/no-img-element
+            image={<img src={"/Project_EMA.png"} alt="" />}
           />
           <Link href={"/projects"} replace={true}>
             <p>See more projects </p>
