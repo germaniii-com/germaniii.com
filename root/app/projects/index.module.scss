@@ -1,17 +1,16 @@
 @import "../index.module.scss";
 
 .main {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  align-items: center;
-  justify-content: center;
   background-color: $backgroundColor;
+  width: 100%;
   height: fit-content;
-  margin: 1em;
-  gap: 5em;
 }
 
 .projectsLayout {
-  height: 100%;
-  min-height: 100vh;
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  row-gap: 1em;
+  padding: 1em;
 }
