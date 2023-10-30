@@ -3,44 +3,38 @@ import SectionHeader from "../SectionHeader";
 import ProjectCard from "./_components/ProjectCard";
 import styles from "./index.module.scss";
 import Link from "next/link";
-
-export enum DIRECTION {
-  FLOAT_LEFT = 0,
-  FLOAT_RIGHT = 1,
-  FLOAT_CENTER = 2,
-}
+import { DIRECTION } from "@/app/Globals";
+import { Projects as projects } from "@/app/Globals";
 
 const TopProjects = () => {
+  const projectsSlice = projects.slice(0, 2);
   return (
     <div className={styles.topProjectsWrapper}>
       <SectionHeader header={"PROJECTS"} subHeader={"What I have made"} />
       <div className={styles.projectGrid}>
         <div className={styles.row}>
           <ProjectCard
-            title="B.A.I."
-            subTitle="Beyond Automated Interaction"
-            description="An Artificial Intelligence Assistant that can be accessed via the BAI web application."
-            direction={DIRECTION.FLOAT_LEFT}
-            // eslint-disable-next-line @next/next/no-img-element
-            image={<img src={"/Project_EMA.png"} alt="" />}
+            title={projects[0].title}
+            subTitle={projects[0].subTitle}
+            description={projects[0].description}
+            direction={projects[0].direction}
+            image={projects[0].image}
           />
           <ProjectCard
-            title="E.M.A."
-            subTitle="Emergency Messaging Application"
-            description="Thesis project that uses arduino modules in order to communicate between smartphones."
-            direction={DIRECTION.FLOAT_RIGHT}
-            // eslint-disable-next-line @next/next/no-img-element
-            image={<img src={"/Project_EMA.png"} alt="" />}
+            title={projects[1].title}
+            subTitle={projects[1].subTitle}
+            description={projects[1].description}
+            direction={projects[1].direction}
+            image={projects[1].image}
           />
         </div>
         <div className={styles.row}>
           <ProjectCard
-            title="C.H.I.K.A."
-            subTitle="Connect, Hangout, Interact, Kommunicate, Always"
-            description="A real-time messaging web application for communication."
-            direction={DIRECTION.FLOAT_CENTER}
-            // eslint-disable-next-line @next/next/no-img-element
-            image={<img src={"/Project_EMA.png"} alt="" />}
+            title={projects[2].title}
+            subTitle={projects[2].subTitle}
+            description={projects[2].description}
+            direction={projects[2].direction}
+            image={projects[2].image}
           />
           <Link href={"/projects"} replace={true}>
             <p>See more projects </p>

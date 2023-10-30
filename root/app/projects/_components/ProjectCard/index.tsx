@@ -1,6 +1,6 @@
-import React, { ReactNode } from "react";
-import { DIRECTION } from "@/app/Globals";
 import styles from "./index.module.scss";
+import { DIRECTION } from "@/app/Globals";
+import { ReactNode } from "react";
 
 interface ProjectCardProps {
   title?: string;
@@ -8,6 +8,7 @@ interface ProjectCardProps {
   description?: string;
   direction?: DIRECTION;
   image?: ReactNode;
+  tech?: ReactNode;
 }
 
 const ProjectCard = ({
@@ -16,6 +17,7 @@ const ProjectCard = ({
   description = "",
   direction = DIRECTION.FLOAT_LEFT,
   image = <></>,
+  tech = <></>,
 }: ProjectCardProps) => {
   const projectCardStyle =
     direction == DIRECTION.FLOAT_LEFT
@@ -32,6 +34,7 @@ const ProjectCard = ({
           <span>{subTitle}</span>
         </span>
         <p>{description}</p>
+        <div className={styles.techWrapper}>{tech}</div>
         {image}
       </div>
     </button>
