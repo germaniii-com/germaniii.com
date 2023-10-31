@@ -29,12 +29,14 @@ const ProjectCard = ({
   return (
     <button className={styles.projectCardWrapper}>
       <div className={projectCardStyle}>
-        <span>
-          {title}
-          <span>{subTitle}</span>
-        </span>
-        <p>{description}</p>
-        <div className={styles.techWrapper}>{tech}</div>
+        <div className={styles.textWrapper}>
+          <span>
+            {title}
+            <span>{subTitle}</span>
+          </span>
+          <p>{description}</p>
+          <div className={styles.techWrapper}>{tech}</div>
+        </div>
         {image}
       </div>
     </button>
