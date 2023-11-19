@@ -1,8 +1,0 @@
-# Rewrite a path
-[[redirects]]
-from = "/blog"
-to = "https://blog.germaniii.com"
-status = 200
-force = true # COMMENT: ensure that we always redirect
-headers = {X-From = "Netlify"}
-
