@@ -1,0 +1,6 @@
+# Rewrite a path
+[[redirects]]
+from = "/blog"
+to = "https://blog.germaniii.com"
+status = 200
+
