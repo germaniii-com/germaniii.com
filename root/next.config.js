@@ -7,6 +7,11 @@ const nextConfig = {
         destination: "/home",
         permanent: true,
       },
+      {
+        source: "/blog",
+        destination: "https://blog.germaniii.com",
+        permanent: true,
+      },
     ];
   },
 };
