@@ -10,7 +10,8 @@ const nextConfig = {
       {
         source: "/blog",
         destination: "https://blog.germaniii.com",
-        permanent: true,
+        permanent: false,
+        basePath: false,
       },
     ];
   },
