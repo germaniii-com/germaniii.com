@@ -42,7 +42,7 @@ const TopProjects = () => {
           </Link>
         </div>
         <div className={styles.row}>
-          <Link href={`${projectsSlice[1].link}`}>
+          <Link href={`${projectsSlice[2].link}`}>
             <ProjectCard
               title={projectsSlice[2].title}
               subTitle={projectsSlice[2].subTitle}
