@@ -17,7 +17,7 @@ const Projects = () => {
     <div className={styles.main}>
       <div className={styles.projectsLayout}>
         {projects.map((project) => (
-          <Link href={project.link}>
+          <Link href={project.link} key={project.link}>
             <ProjectCard
               key={project.title}
               title={project.title}
