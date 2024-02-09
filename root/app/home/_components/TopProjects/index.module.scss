@@ -38,6 +38,7 @@
     // Special Row second
     .row:nth-child(2) {
       height: fit-content;
+      cursor: pointer;
       @media only screen and (min-width: 768px) {
         grid-template-columns: 1fr auto;
         grid-column: 1 / span 2; // Some CSS magic to span row to 2 columns
