@@ -17,8 +17,8 @@ const NavButton = ({ label = "" }: NavButtonProps) => {
     label.toLowerCase() === "resumé"
       ? downloadResume()
       : label.toLowerCase() === "blog"
-      ? window.location.replace("https://blog.germaniii.com")
-      : router.replace(`/${label.toLowerCase()}`);
+      ? window.location.assign("https://blog.germaniii.com")
+      : router.push(`/${label.toLowerCase()}`);
   };
 
   const downloadResume = () => {

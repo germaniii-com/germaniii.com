@@ -22,7 +22,8 @@ export const Projects = [
     description:
       "An Artificial Intelligence Assistant that can be accessed via the BAI web application.",
     direction: DIRECTION.FLOAT_LEFT,
-    image: <img src={"/Project_EMA.png"} alt="" />,
+    link: "https://bai.germaniii.com",
+    image: <img src={"/Project_BAI.png"} alt="" />,
     tech: (
       <>
         <SiVite />
@@ -37,6 +38,7 @@ export const Projects = [
     description:
       "Thesis project that uses arduino modules in order to communicate between smartphones.",
     direction: DIRECTION.FLOAT_RIGHT,
+    link: "https://github.com/germaniii/EMA",
     image: <img src={"/Project_EMA.png"} alt="" />,
     tech: (
       <>
@@ -47,11 +49,13 @@ export const Projects = [
     ),
   },
   {
-    title: "C.H.I.K.A.",
-    subTitle: "Connect, Hangout, Interact, Kommunicate, Always",
-    description: "A real-time messaging web application for communication.",
+    title: "blog.germaniii.com",
+    subTitle: "The German III Blog",
+    description:
+      "An informative blog about various topics like tech, life, and how-tos.",
+    link: "https://blog.germaniii.com",
     direction: DIRECTION.FLOAT_LEFT,
-    image: <img src={"/Project_EMA.png"} alt="" />,
+    image: <img src={"/Project_BLOG.png"} alt="" />,
     tech: (
       <>
         <SiNextdotjs />
