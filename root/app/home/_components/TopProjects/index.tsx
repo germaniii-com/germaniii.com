@@ -22,30 +22,36 @@ const TopProjects = () => {
       <SectionHeader header={"PROJECTS"} subHeader={"What I have made"} />
       <div className={styles.projectGrid}>
         <div className={styles.row}>
-          <ProjectCard
-            title={projectsSlice[0].title}
-            subTitle={projectsSlice[0].subTitle}
-            description={projectsSlice[0].description}
-            direction={projectsSlice[0].direction}
-            image={projectsSlice[0].image}
-          />
-          <ProjectCard
-            title={projectsSlice[1].title}
-            subTitle={projectsSlice[1].subTitle}
-            description={projectsSlice[1].description}
-            direction={projectsSlice[1].direction}
-            image={projectsSlice[1].image}
-          />
+          <Link href={`${projectsSlice[0].link}`}>
+            <ProjectCard
+              title={projectsSlice[0].title}
+              subTitle={projectsSlice[0].subTitle}
+              description={projectsSlice[0].description}
+              direction={projectsSlice[0].direction}
+              image={projectsSlice[0].image}
+            />
+          </Link>
+          <Link href={`${projectsSlice[1].link}`}>
+            <ProjectCard
+              title={projectsSlice[1].title}
+              subTitle={projectsSlice[1].subTitle}
+              description={projectsSlice[1].description}
+              direction={projectsSlice[1].direction}
+              image={projectsSlice[1].image}
+            />
+          </Link>
         </div>
         <div className={styles.row}>
-          <ProjectCard
-            title={projectsSlice[2].title}
-            subTitle={projectsSlice[2].subTitle}
-            description={projectsSlice[2].description}
-            direction={projectsSlice[2].direction}
-            image={projectsSlice[2].image}
-          />
-          <Link href={"/projects"} replace={true}>
+          <Link href={`${projectsSlice[1].link}`}>
+            <ProjectCard
+              title={projectsSlice[2].title}
+              subTitle={projectsSlice[2].subTitle}
+              description={projectsSlice[2].description}
+              direction={projectsSlice[2].direction}
+              image={projectsSlice[2].image}
+            />
+          </Link>
+          <Link href={"/projects"}>
             <p>See more projects </p>
             <BiRightArrowAlt />
           </Link>
