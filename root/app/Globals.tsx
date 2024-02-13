@@ -4,13 +4,11 @@ import {
   SiGatsby,
   SiJavascript,
   SiLaravel,
-  SiNextdotjs,
   SiSass,
   SiSpring,
   SiSqlite,
   SiStrapi,
   SiTailwindcss,
-  SiTypescript,
   SiVite,
 } from "react-icons/si";
 
@@ -64,8 +62,8 @@ export const Projects = [
     image: <img src={"/Project_BLOG.png"} alt="" />,
     tech: (
       <>
-        <SiNextdotjs />
-        <SiTypescript />
+        <SiVite />
+        <SiJavascript />
         <SiSpring />
         <SiSass />
       </>
