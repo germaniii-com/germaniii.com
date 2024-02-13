@@ -1,11 +1,16 @@
 import {
   SiAndroid,
   SiCplusplus,
+  SiGatsby,
+  SiJavascript,
+  SiLaravel,
   SiNextdotjs,
   SiSass,
+  SiSpring,
   SiSqlite,
   SiStrapi,
   SiTailwindcss,
+  SiTypescript,
   SiVite,
 } from "react-icons/si";
 
@@ -27,8 +32,9 @@ export const Projects = [
     tech: (
       <>
         <SiVite />
-        <SiTailwindcss />
-        <SiStrapi />
+        <SiJavascript />
+        <SiSass />
+        <SiLaravel />
       </>
     ),
   },
@@ -49,17 +55,36 @@ export const Projects = [
     ),
   },
   {
+    title: "A.F.T.A.",
+    subTitle: "Another Financial Tracking Application",
+    description:
+      "A financial web application that is used to manage leasing businesses.",
+    direction: DIRECTION.FLOAT_LEFT,
+    link: "https://afta.germaniii.com",
+    image: <img src={"/Project_BLOG.png"} alt="" />,
+    tech: (
+      <>
+        <SiNextdotjs />
+        <SiTypescript />
+        <SiSpring />
+        <SiSass />
+      </>
+    ),
+  },
+  {
     title: "blog.germaniii.com",
     subTitle: "The German III Blog",
     description:
       "An informative blog about various topics like tech, life, and how-tos.",
     link: "https://blog.germaniii.com",
-    direction: DIRECTION.FLOAT_LEFT,
+    direction: DIRECTION.FLOAT_RIGHT,
     image: <img src={"/Project_BLOG.png"} alt="" />,
     tech: (
       <>
-        <SiNextdotjs />
-        <SiSass />
+        <SiGatsby />
+        <SiJavascript />
+        <SiStrapi />
+        <SiTailwindcss />
       </>
     ),
   },
