@@ -1,41 +1,26 @@
 "use client";
 
+import Link from "next/link";
 import styles from "./index.module.scss";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 interface NavButtonProps {
   label?: string;
 }
 
 const NavButton = ({ label = "" }: NavButtonProps) => {
-  const router = useRouter();
   const pathName = usePathname().replace("/", "");
-  const selectedClass =
-    pathName === label.toLowerCase() ? `${styles.selected}` : "";
-
-  const handleClick = () => {
-    label.toLowerCase() === "resumé"
-      ? downloadResume()
-      : label.toLowerCase() === "blog"
-      ? window.location.assign("https://blog.germaniii.com")
-      : router.push(`/${label.toLowerCase()}`);
-  };
-
-  const downloadResume = () => {
-    const pdfUrl = "GermanEFelisartaIII_Resume.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "GermanIIIFelisarta.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const toPath = label.toLowerCase();
+  const selectedClass = pathName === toPath ? `${styles.selected}` : "";
+  const displayLabel = label === 'Resume' ? 'Resumé' : label
 
   return (
     <li key={label} className={`${styles.listStyle}`}>
-      <button key={label} className={selectedClass} onClick={handleClick}>
-        {label}
-      </button>
+      <Link href={toPath}>
+        <button key={label} className={selectedClass}>
+          {displayLabel}
+        </button>
+      </Link>
     </li>
   );
 };
