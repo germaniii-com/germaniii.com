@@ -44,6 +44,7 @@
   @media only screen and (min-width: 768px) {
     align-items: center;
     justify-content: right;
+
     img {
       aspect-ratio: 1;
       width: (100vw / 3);
@@ -66,6 +67,7 @@
   span {
     font-size: x-large;
     font-weight: normal;
+
     &.spanBig {
       font-weight: bold;
       font-size: x-large;
@@ -82,7 +84,8 @@
     display: flex;
     justify-content: center;
     margin-top: 1em;
-    p {
+
+    span {
       width: fit-content;
       height: fit-content;
       padding: 0.5em;
@@ -100,11 +103,13 @@
     text-align: start;
     line-height: normal;
     margin-top: 0;
+
     & .pWrapper {
       width: 100%;
       display: flex;
       justify-content: left;
       margin-top: 0;
+
       p {
         width: fit-content;
         height: fit-content;

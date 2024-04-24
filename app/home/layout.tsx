@@ -1,5 +1,3 @@
-import AboutMe from "./_components/AboutMe";
-import TopProjects from "./_components/TopProjects";
 import styles from "./index.module.scss";
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {

@@ -18,7 +18,7 @@ const AboutMe = () => (
         I&apos;m <span className={styles.spanBig}>German III</span>
       </span>
       <div className={styles.pWrapper}>
-        <p>
+        <span>
           Bachelor of Science in Computer Engineering
           <br />
           Software Engineer
@@ -26,7 +26,7 @@ const AboutMe = () => (
           Technology Enthusiast
           <br />
           <ContactMeButton />
-        </p>
+        </span>
       </div>
     </div>
   </div>
