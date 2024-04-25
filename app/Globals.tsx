@@ -25,7 +25,7 @@ export const Projects = [
     description:
       "An Artificial Intelligence Assistant that can be accessed via the BAI web application.",
     direction: DIRECTION.FLOAT_LEFT,
-    link: "https://bai.germaniii.com",
+    link: "https://gitlab.com/germaniii.com/bai.germaniii.com",
     image: <img src={"/Project_BAI.png"} alt="" />,
     tech: (
       <>
@@ -58,7 +58,7 @@ export const Projects = [
     description:
       "A financial web application that is used to manage leasing businesses.",
     direction: DIRECTION.FLOAT_LEFT,
-    link: "https://afta.germaniii.com",
+    link: "https://gitlab.com/germaniii.com/afta.germaniii.com",
     image: <img src={"/Project_BLOG.png"} alt="" />,
     tech: (
       <>
@@ -74,7 +74,7 @@ export const Projects = [
     subTitle: "The German III Blog",
     description:
       "An informative blog about various topics like tech, life, and how-tos.",
-    link: "https://blog.germaniii.com",
+    link: "https://gitlab.com/germaniii.com/blog.germaniii.com",
     direction: DIRECTION.FLOAT_RIGHT,
     image: <img src={"/Project_BLOG.png"} alt="" />,
     tech: (
