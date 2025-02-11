@@ -3,21 +3,19 @@ import styles from "./index.module.scss";
 import Image from "next/image";
 
 const AboutMe = () => (
-  <div className={styles.aboutMeWrapper}>
-    <div className={styles.imageWrapper}>
-      <Image
-        src="/germaniii.png"
-        alt="German III's photo"
-        width={300}
-        height={300}
-      />
-    </div>
+  <div className={styles.aboutMe}>
+    <Image
+      src="/germaniii.png"
+      alt="German III's photo"
+      width={300}
+      height={300}
+    />
     <div className={styles.textWrapper}>
       <h2>Hi,</h2>
       <span>
         I&apos;m <span className={styles.spanBig}>German III</span>
       </span>
-      <div className={styles.pWrapper}>
+      <p>
         <span>
           Bachelor of Science in Computer Engineering
           <br />
@@ -27,7 +25,7 @@ const AboutMe = () => (
           <br />
           <ContactMeButton />
         </span>
-      </div>
+      </p>
     </div>
   </div>
 );
