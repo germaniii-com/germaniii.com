@@ -1,4 +1,4 @@
-import styles from "./index.module.scss";
+import "./index.scss";
 
 interface SectionHeaderProps {
   header: string;
@@ -7,10 +7,10 @@ interface SectionHeaderProps {
 
 const SectionHeader = ({ header, subHeader }: SectionHeaderProps) => {
   return (
-    <div className={styles.sectionHeader}>
+    <>
       <h1>{header}</h1>
       <h2>{subHeader}</h2>
-    </div>
+    </>
   );
 };
 
