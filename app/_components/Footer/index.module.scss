@@ -44,20 +44,9 @@
         }
 
         svg {
-          display: inline; /* or block, or any other appropriate value */
-        }
-        span {
-          display: none;
-        }
-        // For Desktop
-        @media only screen and (min-width: 768px) {
-          /* CSS: Show the SVG and span on hover of the parent */
-          &:hover svg {
-            display: none;
-          }
-          &:hover span {
-            font-size: small;
-            display: inline; /* or block, or any other appropriate value */
+          display: inline;
+          &:hover {
+            color: $primaryColor_onHover;
           }
         }
       }
