@@ -8,6 +8,7 @@ import {
 } from "react-icons/bi";
 import {
   SiAndroid,
+  SiAstro,
   SiCplusplus,
   SiGatsby,
   SiJavascript,
@@ -87,9 +88,8 @@ export const Projects = [
     image: <img src={"/Project_BLOG.png"} alt="" />,
     tech: (
       <>
-        <SiGatsby />
+        <SiAstro />
         <SiJavascript />
-        <SiStrapi />
         <SiTailwindcss />
       </>
     ),
