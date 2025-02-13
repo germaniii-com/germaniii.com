@@ -118,7 +118,7 @@
 }
 
 .textWrapper {
-  color: #363636;
+  color: $primaryColor;
   width: 100%;
   height: 100%;
   display: flex;
@@ -151,7 +151,7 @@
       width: fit-content;
       height: fit-content;
       padding: 0.5em;
-      background-color: #bffdfd;
+      background-color: $accentBackgroundColor;
       border-radius: 0.5em;
       font-size: small;
       font-weight: normal;
@@ -173,7 +173,7 @@
         width: fit-content;
         height: fit-content;
         padding: 0.5em;
-        background-color: #bffdfd;
+        background-color: $accentBackgroundColor;
         border-radius: 0.5em;
 
         font-size: small;
