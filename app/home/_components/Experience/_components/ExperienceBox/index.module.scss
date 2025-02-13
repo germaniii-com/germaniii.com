@@ -1,50 +1,54 @@
 @import "../../../../../index.module.scss";
 
 .experienceBoxWrapper {
-  display: block;
-  padding: 1em;
-  border-radius: 1em;
-  align-content: center;
-  justify-content: center;
+  display: grid;
+  column-gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
 
-  & .textWrapper {
+  span {
+    color: $primaryColor;
+    justify-self: end;
+    align-self: start;
+    height: fit-content;
+  }
+
+  ul {
+    list-style-type: none;
     display: grid;
-    column-gap: 1em;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    color: black;
+    text-align: start;
 
-    span {
-      color: $primaryColor;
-      justify-self: end;
-      align-self: center;
+    li {
       height: fit-content;
     }
 
+    li:nth-child(1) {
+      color: blue;
+      font-weight: bold;
+      font-size: larger;
+    }
+
+    li:nth-child(2) {
+      font-size: medium;
+      font-weight: bold;
+      font-weight: normal;
+    }
+
+    li:nth-child(3) {
+      display: none;
+      margin-top: 0.5em;
+      font-size: medium;
+      font-weight: normal;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-width: 75%;
+
     ul {
-      list-style-type: none;
-      display: grid;
-      grid-template-rows: repeat(3, auto);
-      color: black;
-
-      @media only screen and (min-width: 768px) {
-        max-width: 75%;
-      }
-      li {
-        height: fit-content;
-      }
-
-      li:nth-child(1) {
-        color: blue;
-        font-weight: bold;
-        font-size: larger;
-      }
-
-      li:nth-child(2) {
-        font-size: medium;
-        font-weight: bold;
-        font-weight: normal;
-      }
-
       li:nth-child(3) {
+        display: inline;
         margin-top: 0.5em;
         font-size: medium;
         font-weight: normal;

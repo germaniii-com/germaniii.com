@@ -52,7 +52,7 @@
     font-weight: normal;
   }
 
-  p {
+  & .description {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -77,7 +77,7 @@
     line-height: normal;
     margin-top: 0;
 
-    p {
+    & .description {
       width: 100%;
       display: flex;
       justify-content: left;

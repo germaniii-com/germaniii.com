@@ -13,9 +13,10 @@ const AboutMe = () => (
     <div className={styles.textWrapper}>
       <h2>Hi,</h2>
       <span>
-        I&apos;m <span className={styles.spanBig}>German III</span>
+        {"I'm "}
+        <span className={styles.spanBig}>German III</span>
       </span>
-      <p>
+      <div className={styles.description}>
         <span>
           Bachelor of Science in Computer Engineering
           <br />
@@ -25,7 +26,7 @@ const AboutMe = () => (
           <br />
           <ContactMeButton />
         </span>
-      </p>
+      </div>
     </div>
   </div>
 );

@@ -15,14 +15,12 @@ const ExperienceBox = ({
 }: ExperienceBoxProps) => {
   return (
     <div className={styles.experienceBoxWrapper}>
-      <div className={styles.textWrapper}>
-        <span>{date}</span>
-        <ul>
-          <li>{company}</li>
-          <li>{role}</li>
-          <li>{description}</li>
-        </ul>
-      </div>
+      <span>{date}</span>
+      <ul>
+        <li>{company}</li>
+        <li>{role}</li>
+        <li>{description}</li>
+      </ul>
     </div>
   );
 };

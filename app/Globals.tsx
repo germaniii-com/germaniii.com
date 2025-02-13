@@ -1,5 +1,14 @@
 import {
+  BiDetail,
+  BiLogoGithub,
+  BiLogoGmail,
+  BiLogoInstagram,
+  BiLogoLinkedin,
+  BiLogoYoutube,
+} from "react-icons/bi";
+import {
   SiAndroid,
+  SiAstro,
   SiCplusplus,
   SiGatsby,
   SiJavascript,
@@ -79,12 +88,61 @@ export const Projects = [
     image: <img src={"/Project_BLOG.png"} alt="" />,
     tech: (
       <>
-        <SiGatsby />
+        <SiAstro />
         <SiJavascript />
-        <SiStrapi />
         <SiTailwindcss />
       </>
     ),
+  },
+];
+
+export const Contacts = [
+  {
+    link: "mailto:germaniiifelisarta@gmail.com",
+    logo: <BiLogoGmail />,
+  },
+  {
+    link: "https://github.com/germaniii",
+    logo: <BiLogoGithub />,
+  },
+  {
+    link: "https://instagram.com/germaniiifelisarta",
+    logo: <BiLogoInstagram />,
+  },
+  {
+    link: "https://www.linkedin.com/in/german-iii-felisarta-648b9420b",
+    logo: <BiLogoLinkedin />,
+  },
+  {
+    link: "https://www.youtube.com/channel/UCLdx8-LN-JAnrExazmhjmDA",
+    logo: <BiLogoYoutube />,
+  },
+];
+
+export const Footers = [
+  {
+    link: "https://blog.germaniii.com",
+    logo: <BiDetail />,
+  },
+  {
+    link: "mailto:germaniiifelisarta@gmail.com",
+    logo: <BiLogoGmail />,
+  },
+  {
+    link: "https://github.com/germaniii",
+    logo: <BiLogoGithub />,
+  },
+  {
+    link: "https://instagram.com/germaniiifelisarta",
+    logo: <BiLogoInstagram />,
+  },
+  {
+    link: "https://www.linkedin.com/in/german-iii-felisarta-648b9420b",
+    logo: <BiLogoLinkedin />,
+  },
+  {
+    link: "https://www.youtube.com/channel/UCLdx8-LN-JAnrExazmhjmDA",
+    logo: <BiLogoYoutube />,
   },
 ];
 
