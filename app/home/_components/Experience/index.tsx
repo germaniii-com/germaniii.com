@@ -1,4 +1,3 @@
-import exp from "constants";
 import SectionHeader from "../SectionHeader";
 import ExperienceBox from "./_components/ExperienceBox";
 import styles from "./index.module.scss";
@@ -30,19 +29,17 @@ const Experience = () => {
   return (
     <div className={styles.experienceWrapper}>
       <SectionHeader header="EXPERIENCE" subHeader="My professional history" />
-      <div className={styles.experienceBoxes}>
-        {expDat.map((exp) => {
-          return (
-            <ExperienceBox
-              key={exp.date}
-              date={exp.date}
-              company={exp.company}
-              role={exp.role}
-              description={exp.description}
-            />
-          );
-        })}
-      </div>
+      {expDat.map((exp) => {
+        return (
+          <ExperienceBox
+            key={exp.date}
+            date={exp.date}
+            company={exp.company}
+            role={exp.role}
+            description={exp.description}
+          />
+        );
+      })}
     </div>
   );
 };
