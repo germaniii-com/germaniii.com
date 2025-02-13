@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./index.module.scss";
 import { Contacts } from "../../../../../Globals";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
