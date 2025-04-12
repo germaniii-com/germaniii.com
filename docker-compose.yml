@@ -1,0 +1,13 @@
+version: "3.2"
+services:
+  react-app:
+    container_name: germaniii.com
+    build:
+      context: ./
+      dockerfile: ../Dockerfile
+    ports:
+      - 8000:3000
+    volumes:
+      - ./:/app
+      - /app/.next
+      - /app/node_modules
